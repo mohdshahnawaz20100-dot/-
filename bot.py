@@ -276,6 +276,8 @@ bot = TelegramClient(
     system_version="SHAHNAWAZ",
     app_version="1.0"
 ).start(bot_token=BOT_TOKEN)
+from bot3 import register_jarvis
+register_jarvis(bot, OWNER_ID)
 from bot_ai import register_ai_commands
 register_ai_commands(bot, OWNER_ID)
 pending_clients = {}
