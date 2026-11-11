@@ -74,7 +74,7 @@ def _ask_gemini(chat_id, prompt):
     api_key = os.getenv("GEMINI_API_KEY", "").strip()
     if not api_key:
         return "JARVIS setup incomplete hai: Render Environment mein GEMINI_API_KEY set karo."
-    model = os.getenv("GEMINI_MODEL", "gemini-2.5-flash").strip()
+    model = os.getenv("GEMINI_MODEL", "gemini-3.8-flash").strip()
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     contents = _history(chat_id)
     contents.append({"role": "user", "parts": [{"text": prompt[:4000]}]})
