@@ -1,0 +1,8 @@
+aiohttp
+motor
+telethon
+backports.zoneinfo; python_version < '3.9'
+requests
+yt-dlp
+youtube-transcript-api
+pypdf
