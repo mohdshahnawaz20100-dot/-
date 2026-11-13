@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*.session
+.env
+*.log
+*.db
+*.sqlite3
+.DS_Store
+venv/
+.venv/
+clonex_data/
