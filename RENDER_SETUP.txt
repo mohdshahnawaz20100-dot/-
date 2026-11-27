@@ -1,0 +1,47 @@
+SHAHNAWAZ BOT5 - RENDER DEPLOY NOTES
+
+1) Render Build Command:
+   pip install -r requirements.txt
+
+2) Render Start Command:
+   python bot5.py
+
+3) Required Environment Variables:
+   API_ID       = your Telegram API ID (number)
+   API_HASH     = your Telegram API Hash
+   BOT_TOKEN    = your Telegram bot token from BotFather
+   OWNER_ID     = your own numeric Telegram user ID
+   DATA_DIR     = /var/data/clonex_data  (ONLY if a persistent disk is mounted at /var/data)
+
+4) Optional Environment Variables:
+   GROQ_API_KEY
+   WEATHER_API_KEY
+   NEWS_API_KEY
+   OWNER_NAME
+
+5) Keep these companion Python files in the SAME GitHub root folder:
+   bot3.py
+   bot_ai.py
+   bot4.py
+   bot_genius.py
+   bot_islamic.py
+
+   bot5.py imports these modules. Do not delete or rename them.
+
+6) Login:
+   - Send /start
+   - If approval is pending, the owner must send /approve YOUR_TELEGRAM_ID
+   - Then send /login and your own phone number with country code
+   - Check the official Telegram app/service notifications for the login code.
+     Telegram may deliver the code inside Telegram instead of SMS.
+   - Send the code with or without spaces.
+   - If Two-Step Verification is enabled, enter your own 2FA password.
+
+SECURITY:
+- Never share OTP, 2FA password, BOT_TOKEN, API_HASH, or session files.
+- This bot stores an authorized Telegram session in its SQLite database so the userbot can reconnect.
+  Anyone who gets that database/session can access that Telegram account.
+- Keep the GitHub repository private if it contains secrets; never commit .env, SQLite files,
+  StringSession values, or Telegram session files.
+- DATA_DIR must point to a persistent Render disk mount if you want SQLite data to survive
+  redeploys/restarts. Without a persistent disk, local SQLite data can be lost.

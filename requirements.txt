@@ -1,11 +1,9 @@
-telethon>=1.36.0
+Telethon>=1.36.0,<2
 aiohttp>=3.9.0
-requests>=2.31.0
 Pillow>=10.0.0
-img2pdf>=0.5.1
 pyfiglet>=1.0.2
-yt-dlp>=2024.1.0
-youtube-transcript-api>=0.6.2
-edge-tts>=6.1.0
-pypdf>=5.0.0
-python-docx>=1.1.0
+img2pdf>=0.5.1
+requests>=2.31.0
+pypdf>=4.0.0
+youtube-transcript-api>=0.6.2,<1.0
+yt-dlp>=2024.3.10
